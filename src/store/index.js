@@ -1,6 +1,6 @@
 import { createStore } from 'redux'
 
-counterReducer = (state = { counter: 0 }, action) => {
+const counterReducer = (state = { counter: 0 }, action) => {
   if (action.type === 'increnet') {
     return { counter: state.counter + 1 }
   }
